@@ -221,4 +221,60 @@ export const menuItems = [
       Ingredients: false,
     },
   },
+  {
+    23: {
+      Name: "Add Onion Slice",
+      Color: "Tiffany Blue",
+      Mods: false,
+      Ingredients: ["Onion"],
+    },
+  },
+  {
+    24: {
+      Name: "Add Pickle Chips",
+      Color: "Tiffany Blue",
+      Mods: false,
+      Ingredients: ["Pickles"],
+    },
+  },
+  {
+    25: {
+      Name: "Add Lettuce",
+      Color: "Tiffany Blue",
+      Mods: false,
+      Ingredients: ["Lettuce"],
+    },
+  },
+  {
+    26: {
+      Name: "Add Tomato",
+      Color: "Tiffany Blue",
+      Mods: false,
+      Ingredients: ["Tomato"],
+    },
+  },
+  {
+    27: {
+      Name: "Hot Ones Menu",
+      Color: "Red",
+      Mods: "Hot Ones Menu",
+      Ingredients: false,
+    },
+  },
+  {
+    28: {
+      Name: "Hot Ones Mods",
+      Color: "Red",
+      Mods: "Hot Ones Mods Menu",
+      Ingredients: false,
+    },
+  },
+  {
+    29: {
+      Name: "Winter LTD Drinks",
+      Color: "Blue",
+      Mods: "Hot Ones Mods Menu",
+      Ingredients: false,
+    },
+  },
 ];
