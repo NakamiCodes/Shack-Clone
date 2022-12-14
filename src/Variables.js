@@ -1,7 +1,7 @@
 //Array of objects containing each main page item along with its properties
 export const menuItems = [
   {
-    1: {
+    Items: {
       Name: "Shack Burger",
       Color: "Light Green",
       Mods: ["Single", "Double", "Triple"],
