@@ -271,9 +271,137 @@ export const menuItems = [
   },
   {
     29: {
-      Name: "Winter LTD Drinks",
+      Name: "Winter LTO Drinks",
       Color: "Blue",
-      Mods: "Hot Ones Mods Menu",
+      Mods: "Winter Menu",
+      Ingredients: false,
+    },
+  },
+  {
+    30: {
+      Name: "Coming Soon Speacials",
+      Color: "Green",
+      Mods: "Winter Menu",
+      Ingredients: false,
+    },
+  },
+  {
+    31: {
+      Name: "$$ Gluten Free Bun",
+      Color: "Tiffany Blue",
+      Mods: false,
+      Ingredients: "Gluten Free Bun",
+    },
+  },
+  {
+    32: {
+      Name: "Lettuce Wrap",
+      Color: "Tiffany Blue",
+      Mods: false,
+      Ingredients: "Lettuce",
+    },
+  },
+  {
+    33: {
+      Name: "$$ Cheese Slice",
+      Color: "Tiffany Blue",
+      Mods: false,
+      Ingredients: "Cheese",
+    },
+  },
+  {
+    34: {
+      Name: "Cookies & Cream",
+      Color: "Rose",
+      Mods: false,
+      Ingredients: ["Vanilla Custard", "Crushed Oreo"],
+    },
+  },
+  {
+    35: {
+      Name: "Chocolate Shake",
+      Color: "Rose",
+      Mods: false,
+      Ingredients: ["Chocolate Custard"],
+    },
+  },
+  {
+    36: {
+      Name: "Strawberry Shake",
+      Color: "Rose",
+      Mods: false,
+      Ingredients: ["Vanilla Custard", "Strawberry flavour"],
+    },
+  },
+  {
+    37: {
+      Name: "Vanilla Shake",
+      Color: "Rose",
+      Mods: false,
+      Ingredients: ["Vanilla Custard"],
+    },
+  },
+  {
+    38: {
+      Name: "LTO Shackes",
+      Color: "Rose",
+      Mods: "Winter",
+      Ingredients: false,
+    },
+  },
+  {
+    39: {
+      Name: "$$ Whipped Cream",
+      Color: "Rose",
+      Mods: false,
+      Ingredients: ["Whipped cream"],
+    },
+  },
+  {
+    40: {
+      Name: "$$ Malt",
+      Color: "Rose",
+      Mods: false,
+      Ingredients: ["Malt"],
+    },
+  },
+  {
+    41: {
+      Name: "Custard Mods",
+      Color: "Rose",
+      Mods: "Custard Mod Menu",
+      Ingredients: false,
+    },
+  },
+  {
+    42: {
+      Name: "Small Soft Drink",
+      Color: "Orange",
+      Mods: false,
+      Ingredients: false,
+    },
+  },
+  {
+    43: {
+      Name: "Large Soft Drink",
+      Color: "Orange",
+      Mods: false,
+      Ingredients: false,
+    },
+  },
+  {
+    44: {
+      Name: "Specialty Drinks",
+      Color: "Orange",
+      Mods: "Specailty Drinks Menu",
+      Ingredients: false,
+    },
+  },
+  {
+    45: {
+      Name: "Bev Mods",
+      Color: "Orange",
+      Mods: "Bev Mods Menu",
       Ingredients: false,
     },
   },
