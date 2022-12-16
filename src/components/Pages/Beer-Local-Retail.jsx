@@ -1,7 +1,7 @@
 const BeerLocalRetail = () => {
   return (
     <div className="PageWrapper">
-      <p>Working?</p>
+      <p>Beer</p>
     </div>
   );
 };

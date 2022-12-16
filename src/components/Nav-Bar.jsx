@@ -5,23 +5,43 @@ const NavBar = () => {
   return (
     <div>
       <nav>
-        <NavLink className="navLink" to="/">
+        <NavLink
+          className="navLink"
+          to="/"
+          style={{ backgroundColor: "#c24567", padding: "10px" }}
+        >
           {" "}
           Main Page{" "}
         </NavLink>
-        <NavLink className="navLink" to="/hotfood">
+        <NavLink
+          className="navLink"
+          to="/hotfood"
+          style={{ backgroundColor: "#c24567", padding: "10px" }}
+        >
           {" "}
           Hot Food{" "}
         </NavLink>
-        <NavLink className="navLink" to="/custard">
+        <NavLink
+          className="navLink"
+          to="/custard"
+          style={{ backgroundColor: "#c24567", padding: "10px" }}
+        >
           {" "}
           Custard{" "}
         </NavLink>
-        <NavLink className="navLink" to="/bevs">
+        <NavLink
+          className="navLink"
+          to="/bevs"
+          style={{ backgroundColor: "#c24567", padding: "10px" }}
+        >
           {" "}
           Bevs{" "}
         </NavLink>
-        <NavLink className="navLink" to="/beer">
+        <NavLink
+          className="navLink"
+          to="/beer"
+          style={{ backgroundColor: "#c24567", padding: "10px" }}
+        >
           {" "}
           Beer Local Retail{" "}
         </NavLink>

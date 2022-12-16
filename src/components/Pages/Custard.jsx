@@ -1,7 +1,7 @@
 const Custard = () => {
   return (
     <div className="PageWrapper">
-      <p>Working?</p>
+      <p>Custard</p>
     </div>
   );
 };

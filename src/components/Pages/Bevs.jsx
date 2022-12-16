@@ -1,7 +1,7 @@
 const Bevs = () => {
   return (
     <div className="PageWrapper">
-      <p>Working?</p>
+      <p>Bevs</p>
     </div>
   );
 };

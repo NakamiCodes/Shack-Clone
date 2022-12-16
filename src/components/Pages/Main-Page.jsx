@@ -1,7 +1,7 @@
 const MainPage = () => {
   return (
     <div className="PageWrapper">
-      <p>Working?</p>
+      <p>Main Page</p>
     </div>
   );
 };

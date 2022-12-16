@@ -1,7 +1,7 @@
 const HotFood = () => {
   return (
     <div className="PageWrapper">
-      <p>Working?</p>
+      <p>Hot Food</p>
     </div>
   );
 };

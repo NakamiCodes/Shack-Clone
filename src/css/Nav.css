@@ -11,6 +11,7 @@ nav {
 .navLink {
   margin: 2%;
   padding: 5px;
+  background-color: red;
   color: rgb(203, 40, 40);
   font-weight: 400;
   font-size: 20px;
