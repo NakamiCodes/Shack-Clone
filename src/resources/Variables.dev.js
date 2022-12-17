@@ -1,169 +1,4 @@
-//Array of objects containing each main page item along with its properties
-var menuItems = [
-  {
-    1: {
-      Name: "Shack Burger",
-      Color: "#38b70e",
-      Mods: ["Single", "Double", "Triple"],
-      Ingredients: [
-        "Bun",
-        "Butter",
-        "Lettuce",
-        "Tomato",
-        "Shack Sauce",
-        "Onions",
-        "Cheese",
-        "Burger Patty",
-      ],
-    },
-  },
-  {
-    2: {
-      Name: "Cheese Burger",
-      Color: "#38b70e",
-      Mods: ["Single", "Double", "Triple"],
-      Ingredients: ["Bun", "Butter", "Cheese", "Burger Patty"],
-    },
-  },
-  {
-    3: {
-      Name: "Smoke Shake",
-      Color: "#38b70e",
-      Mods: ["Single", "Double", "Triple"],
-      Ingredients: [
-        "Bun",
-        "Butter",
-        "Cheese",
-        "Shake Sauce",
-        "Cherry Peppers",
-        "Burger Patty",
-      ],
-    },
-  },
-  {
-    4: {
-      Name: "Shroom Burger",
-      Color: "#38b70e",
-      Mods: false,
-      Ingredients: [
-        "Bun",
-        "Butter",
-        "Cheese",
-        "Shake Sauce",
-        "Cherry Peppers",
-        "Shroom Patty",
-      ],
-    },
-  },
-  {
-    5: {
-      Name: "Shack Stack",
-      Color: "#38b70e",
-      Mods: false,
-      Ingredients: [
-        "Bun",
-        "Butter",
-        "Lettuce",
-        "Tomato",
-        "Shack Sauce",
-        "Onions",
-        "Cheese",
-        "Burger Patty",
-        "Shroom Patty",
-      ],
-    },
-  },
-  {
-    6: {
-      Name: "Bacon Avocado",
-      Color: "#38b70e",
-      Mods: false,
-      Ingredients: ["Bun", "Butter", "Burger Patty", "Bacon", "Avacado"],
-    },
-  },
-  {
-    7: {
-      Name: "Bacon Cheese Burger",
-      Color: "#38b70e",
-      Mods: false,
-      Ingredients: ["Bun", "Butter", "Burger Patty", "Bacon", "Cheese"],
-    },
-  },
-  {
-    8: {
-      Name: "Burger Mods",
-      Color: "#38b70e",
-      Mods: "Burger Mod Menu",
-      Ingredients: false,
-    },
-  },
-  {
-    9: {
-      Name: "Fries",
-      Color: "#38b70e",
-      Mods: false,
-      Ingredients: ["Fries"],
-    },
-  },
-  {
-    10: {
-      Name: "Fry Mod",
-      Color: "Teal",
-      Mods: "Fry Mod Menu",
-      Ingredients: false,
-    },
-  },
-  {
-    11: {
-      Name: "Hot Dog",
-      Color: "#17bce1",
-      Mods: false,
-      Ingredients: ["Hot Dog Bun", "Hot Dog"],
-    },
-  },
-  {
-    12: {
-      Name: "Dog Mods",
-      Color: "#17bce1",
-      Mods: "Dog Mod Menu",
-      Ingredients: false,
-    },
-  },
-  {
-    13: {
-      Name: "Dog Mods",
-      Color: "#17bce1",
-      Mods: "Dog Mod Menu",
-      Ingredients: false,
-    },
-  },
-  {
-    14: {
-      Name: "$$ Cheese Sauce",
-      Color: "#17bce1",
-      Mods: false,
-      Ingredients: ["Cheese Sauce"],
-    },
-  },
-  {
-    15: {
-      Name: "Side of Cheese Sauce FRIES",
-      Color: "#17bce1",
-      Mods: false,
-      Ingredients: ["Hot Dog Bun", "Hot Dog"],
-    },
-  },
-  {
-    16: {
-      Name: "Add Avocado",
-      Color: "#17bce1",
-      Mods: "Dog Mod Menu",
-      Ingredients: ["Hot Dog Bun", "Hot Dog"],
-    },
-  },
-];
-
-export const replacement = {
+export const menuItems = {
   food: [
     {
       Name: "Shack Burger",
@@ -252,5 +87,219 @@ export const replacement = {
       Mods: false,
       Ingredients: ["Hot Dog Bun", "Hot Dog"],
     },
+    {
+      Name: "Chicken Shack",
+      Color: "#17bce1",
+      Mods: false,
+      Ingredients: [
+        "Bun",
+        "Chicken Patty",
+        "Pickle Chips",
+        "Lettuce",
+        "Herb Mayo",
+      ],
+    },
+    {
+      Name: "Bites 10 PC",
+      Color: "Yellow",
+      Mods: false,
+      Ingredients: ["Chicken Nugget"],
+    },
+    {
+      Name: "Bites 6 PC",
+      Color: "Yellow",
+      Mods: false,
+      Ingredients: ["Chicken Nugget"],
+    },
+    {
+      Name: "Bites 6 PC",
+      Color: "Yellow",
+      Mods: false,
+      Ingredients: ["Chicken Nugget"],
+    },
+    {
+      Name: "Hot Ones Burger",
+      Color: "Red",
+      Mods: false,
+      Ingredients: ["Bun", "Burger Patty", "Cheese", "Bacon", "Hot Ones Sauce"],
+    },
+    {
+      Name: "Hot Ones Chicken",
+      Color: "Red",
+      Mods: false,
+      Ingredients: [
+        "Bun",
+        "Chicken Patty",
+        "Cheese",
+        "Bacon",
+        "Hot Ones Sauce",
+      ],
+    },
+    {
+      Name: "Hot Ones Cheese Fries",
+      Color: "Red",
+      Mods: false,
+      Ingredients: ["Cheese", "Hot Ones Flakes", "Fries"],
+    },
+    {
+      Name: "Hot Ones Bacon Cheese Fries",
+      Color: "Red",
+      Mods: false,
+      Ingredients: ["Cheese", "Bacon", "Hot Ones Flakes", "Fries"],
+    },
+  ],
+  custard: [
+    {
+      Name: "Cookies & Cream",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: ["Vanilla Custard", "Oreo Flakes"],
+    },
+    {
+      Name: "Chocolate Shake",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: ["Chocolate Custard"],
+    },
+    {
+      Name: "Strawberry Shake",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: ["Vanilla Custard", "Strawberry Flavour"],
+    },
+    {
+      Name: "Vanilla Shake",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: ["Vanilla Custard"],
+    },
+    {
+      Name: "Christmas Cookie Shake",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: [
+        "Vanilla Custard",
+        "Peppermint Flavour",
+        "Christmas Sprinkles",
+        "Whipped Cream",
+      ],
+    },
+    {
+      Name: "Chocolate Peppermint",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: [
+        "Chocolate Custard",
+        "Peppermint Flavour",
+        "Peppermint Skprinkles",
+        "Whipped Cream",
+      ],
+    },
+  ],
+  hot_addons: [
+    {
+      Name: "Bacon",
+      Color: "Light Green",
+      Mods: false,
+      Ingredients: ["Bacon"],
+    },
+    {
+      Name: "Salt And Pepper",
+      Color: "Light Green",
+      Mods: false,
+      Ingredients: ["Salt", "Pepper"],
+    },
+    {
+      Name: "Cheese",
+      Color: "Light Green",
+      Mods: false,
+      Ingredients: ["Cheese"],
+    },
+    {
+      Name: "Salt",
+      Color: "Orange",
+      Mods: false,
+      Ingredients: ["Salt"],
+    },
+    {
+      Name: "Pepper",
+      Color: "Orange",
+      Mods: false,
+      Ingredients: ["Pepper"],
+    },
+    {
+      Name: "Shack Sauce",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: ["Mayo", "Ketchup"],
+    },
+    {
+      Name: "Lettuce",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: ["Lettuce"],
+    },
+    {
+      Name: "Tomato",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: ["Lettuce"],
+    },
+    {
+      Name: "Onion",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: ["Onion"],
+    },
+    {
+      Name: "Pickles",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: ["Pickles"],
+    },
+    {
+      Name: "Cherry Peppers",
+      Color: "Pink",
+      Mods: false,
+      Ingredients: ["Cherry Peppers"],
+    },
+    {
+      Name: "Herb Mayo",
+      Color: "Orange",
+      Mods: false,
+      Ingredients: ["Mayo"],
+    },
+    {
+      Name: "Fried Chicken Patty",
+      Color: "Light Green",
+      Mods: false,
+      Ingredients: ["Chicken", "Breading"],
+    },
+    {
+      Name: "Lettuce Wrap",
+      Color: "Orange",
+      Mods: false,
+      Ingredients: ["Chicken", "Breading"],
+    },
+    {
+      Name: "Shallots",
+      Color: "Light Green",
+      Mods: false,
+      Ingredients: ["Onion", "Breading"],
+    },
+    {
+      Name: "Shroom Patty",
+      Color: "Light Green",
+      Mods: false,
+      Ingredients: ["Mushroom", "Breading"],
+    },
+    {
+      Name: "Gluten Freen Bun",
+      Color: "Light Green",
+      Mods: false,
+      Ingredients: ["Gluten Free Bun"],
+    },
   ],
 };
+
+export default menuItems;
