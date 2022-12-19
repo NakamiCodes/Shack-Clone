@@ -3,7 +3,11 @@
   width: 100%;
   height: 500px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
+
+  columns: auto;
+  grid-row: auto;
+  grid-template-columns: max-content;
 }
 
 .MenuButton {
@@ -13,6 +17,7 @@
   margin: 5px;
   width: 100px;
   cursor: pointer;
+  display: block;
 }
 
 .MainSelector {
