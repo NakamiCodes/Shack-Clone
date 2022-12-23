@@ -1,7 +1,5 @@
 const TotalCalcSection = (totalProps) => {
-  const { total, subTotal } = totalProps.props;
-  console.log(total);
-  return <div></div>;
+  return <div>Total: 0</div>;
 };
 
 export default TotalCalcSection;

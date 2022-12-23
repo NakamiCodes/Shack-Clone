@@ -17,10 +17,11 @@
   margin: 5px;
   width: 100px;
   cursor: pointer;
-  display: block;
+  display: inline-block;
 }
 
 .MainSelector {
-  display: flex;
-  align-items: center;
+  display: grid; /* Set the container to be a grid */
+  grid-template-columns: repeat(3, 1fr); /* Set the number of columns in the grid and their widths */
+  grid-gap: 10px; 
 }
