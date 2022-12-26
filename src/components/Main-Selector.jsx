@@ -1,12 +1,27 @@
-import { menuItems } from "../resources/Variables.dev";
 import MenuButton from "./MenuButton";
 
-const MainSelector = () => {
-  const mainMenuItems = menuItems.food.map((item) => {
-    return <MenuButton props={item}></MenuButton>;
+const MainSelector = (props) => {
+  const mainMenuItems = props.items.food.map((item, index) => {
+    return (
+      <MenuButton
+        key={index}
+        props={item}
+        setTotal={props.setTotal}
+        total={props.total}
+        setChosenItems={props.setChosenItems}
+        chosenItems={props.chosenItems}
+      ></MenuButton>
+    );
   });
-  const custard = menuItems.custard.map((item) => {
-    return <MenuButton props={item}></MenuButton>;
+  const custard = props.items.custard.map((item, index) => {
+    return (
+      <MenuButton
+        key={index}
+        props={item}
+        setTotal={props.setTotal}
+        total={props.total}
+      ></MenuButton>
+    );
   });
   return (
     <div className="PageWrapper">

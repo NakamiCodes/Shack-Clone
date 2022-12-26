@@ -1,17 +1,36 @@
-const MenuButton = (info) => {
-  console.log(info);
-  const handleClick = (e, info) => {
-    info.props.Function();
+import { connect } from "react-redux";
+import { ADD_TOTAL, REMOVE_TOTAL } from "../store/action-types";
+
+const mapStateToProps = (state) => {
+  return {};
+};
+
+// const mapDispatchToProps = (dispatch) => {
+//   console.log(dispatch);
+//   return {
+//     addTotal: () => dispatch({ type: ADD_TOTAL }),
+//     removeTotal: () => dispatch({ type: REMOVE_TOTAL }),
+//   };
+// };
+
+const MenuButton = (props) => {
+  const handleItemClick = () => {
+    props.setTotal(props.props.Price + props.total);
+    props.setChosenItems({ ...props.chosenItems });
+    console.log(props.chosenItems);
   };
   return (
     <div
       className="MenuButton"
-      style={{ backgroundColor: info.props.Color }}
-      onClick={(e) => handleClick(e, info)}
+      style={{ backgroundColor: props.props.Color }}
+      onClick={() => handleItemClick()}
     >
-      <p>{info.props.Name}</p>
+      <p>{props.props.Name}</p>
     </div>
   );
 };
 
-export default MenuButton;
+export default connect(
+  mapStateToProps
+  // mapDispatchToProps
+)(MenuButton);

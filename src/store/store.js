@@ -12,13 +12,13 @@ export const totalReducer = (state = initialState, action) => {
   let total;
   switch (action.type) {
     case types.ADD_TOTAL:
-      total = state.total + action.paylod["price"];
+      total = state.total + action.payload["price"];
       return {
         ...state,
         total,
       };
     case types.REMOVE_TOTAL:
-      total = state.total - action.paylod["price"];
+      total = state.total - action.payload["price"];
       return {
         ...state,
         total,
@@ -34,9 +34,9 @@ export const signOn = (state = initialState, action) => {
   let isManager;
   switch (action.type) {
     case types.SIGN_IN:
-      user = action.paylod["user"];
-      userID = action.paylod["userID"];
-      isManager = action.paylod["isManager"];
+      user = action.payload["user"];
+      userID = action.payload["userID"];
+      isManager = action.payload["isManager"];
       return {
         ...state,
         user,
