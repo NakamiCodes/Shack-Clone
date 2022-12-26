@@ -6,22 +6,28 @@ export const initialState = {
   user: "",
   userID: 0,
   isManager: false,
+  chosenItems: [],
 };
 
 export const totalReducer = (state = initialState, action) => {
   let total;
+  const chosenItems = [];
   switch (action.type) {
     case types.ADD_TOTAL:
-      total = state.total + action.payload["price"];
+      total = state.total + action.payload["Price"];
+      chosenItems.push(...state.chosenItems, action.payload["Name"]);
       return {
         ...state,
         total,
+        chosenItems,
       };
     case types.REMOVE_TOTAL:
       total = state.total - action.payload["price"];
+      chosenItems.splice(chosenItems.indexOf(action.payload["Name"]), 1);
       return {
         ...state,
         total,
+        chosenItems,
       };
     default:
       return state;
