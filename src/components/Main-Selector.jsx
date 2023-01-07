@@ -6,22 +6,13 @@ const MainSelector = (props) => {
       <MenuButton
         key={index}
         props={item}
-        setTotal={props.setTotal}
-        total={props.total}
         setChosenItems={props.setChosenItems}
         chosenItems={props.chosenItems}
       ></MenuButton>
     );
   });
   const custard = props.items.custard.map((item, index) => {
-    return (
-      <MenuButton
-        key={index}
-        props={item}
-        setTotal={props.setTotal}
-        total={props.total}
-      ></MenuButton>
-    );
+    return <MenuButton key={index} props={item}></MenuButton>;
   });
   return (
     <div className="PageWrapper">

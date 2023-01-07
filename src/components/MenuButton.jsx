@@ -1,27 +1,30 @@
-import { connect } from "react-redux";
+import { connect, useDispatch } from "react-redux";
 import { ADD_TOTAL, REMOVE_TOTAL } from "../store/action-types";
+import * as actions from "../store/actions";
+
+import * as types from "../store/action-types";
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    addTotal: () => dispatch({ type: ADD_TOTAL }),
-    removeTotal: () => dispatch({ type: REMOVE_TOTAL }),
+    add: (price, item) => dispatch(actions.addTotal(price, item)),
+    remove: (price, item) => dispatch(actions.removeTotal(price, item)),
   };
 };
 
-const MenuButton = (props) => {
+const MenuButton = (item) => {
+  // console.log("Menu Button props", item);
   const handleItemClick = () => {
-    props.setTotal(props.props.Price + props.total);
-    props.setChosenItems({ ...props.chosenItems });
+    item.add(item.props);
   };
   return (
     <div
       className="MenuButton"
-      style={{ backgroundColor: props.props.Color }}
+      style={{ backgroundColor: item.props.Color }}
       onClick={() => handleItemClick()}
     >
-      <p>{props.props.Name}</p>
+      <p>{item.props.Name}</p>
     </div>
   );
 };
 
-export default connect(mapDispatchToProps)(MenuButton);
+export default connect(null, mapDispatchToProps)(MenuButton);

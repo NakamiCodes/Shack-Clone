@@ -1,5 +1,5 @@
-import { createStore } from "redux";
 import * as types from "./action-types";
+import { configureStore } from "@reduxjs/toolkit";
 
 export const initialState = {
   total: 0,
@@ -14,8 +14,10 @@ export const totalReducer = (state = initialState, action) => {
   const chosenItems = [];
   switch (action.type) {
     case types.ADD_TOTAL:
-      total = state.total + action.payload["Price"];
-      chosenItems.push(...state.chosenItems, action.payload["Name"]);
+      total = state.total + action.payload.price.Price;
+      console.log("reducer action", action.payload);
+      chosenItems.push(...state.chosenItems, action.payload.price);
+      console.log(chosenItems);
       return {
         ...state,
         total,
@@ -34,7 +36,7 @@ export const totalReducer = (state = initialState, action) => {
   }
 };
 
-export const signOn = (state = initialState, action) => {
+export const signOnReducer = (state = initialState, action) => {
   let user;
   let userID;
   let isManager;
@@ -64,4 +66,16 @@ export const signOn = (state = initialState, action) => {
   }
 };
 
-export const store = createStore(totalReducer);
+export const rootReducer = () => {
+  return {
+    totalReducer,
+    signOnReducer,
+  };
+};
+
+export const store = configureStore({
+  reducer: {
+    total: totalReducer,
+    signOn: signOnReducer,
+  },
+});
