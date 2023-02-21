@@ -15,9 +15,9 @@ export const totalReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.ADD_TOTAL:
       total = state.total + action.payload.price.Price;
-      console.log("reducer action", action.payload);
+      //console.log("reducer action", action.payload);
       chosenItems.push(...state.chosenItems, action.payload.price);
-      console.log(chosenItems);
+      //console.log(chosenItems);
       return {
         ...state,
         total,

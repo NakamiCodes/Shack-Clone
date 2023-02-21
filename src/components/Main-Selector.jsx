@@ -15,7 +15,7 @@ const MainSelector = (props) => {
     return <MenuButton key={index} props={item}></MenuButton>;
   });
   return (
-    <div className="PageWrapper">
+    <div className="pos-menu">
       {mainMenuItems}
       {custard}
     </div>

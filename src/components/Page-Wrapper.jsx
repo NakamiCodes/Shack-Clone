@@ -14,14 +14,16 @@ const mapStateToProps = (state) => {
 const PageWrapper = (props) => {
   //console.log("Page Wrapper Props", props);
   return (
-    <div className="PageWrapper">
-      <MainSelector items={menuItems}></MainSelector>
-      <SelectionSection></SelectionSection>
-      <TotalCalcSection
-        total={props.state.total}
-        chosenItems={props.state.chosenItems}
-      ></TotalCalcSection>
-    </div>
+    <body>
+      <div className="pos-container">
+        <MainSelector items={menuItems}></MainSelector>
+        <SelectionSection></SelectionSection>
+        <TotalCalcSection
+          total={props.state.total}
+          chosenItems={props.state.chosenItems}
+        ></TotalCalcSection>
+      </div>
+    </body>
   );
 };
 

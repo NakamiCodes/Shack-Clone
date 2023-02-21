@@ -3,7 +3,7 @@ import PageWrapper from "./components/Page-Wrapper";
 
 function App() {
   return (
-    <div className="App">
+    <div className="body">
       <PageWrapper></PageWrapper>
     </div>
   );

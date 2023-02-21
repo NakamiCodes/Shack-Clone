@@ -20,14 +20,26 @@ const TotalCalcSection = (props) => {
   const handleItemClick = (e) => {
     props.remove(menuItems.food["Price"]);
   };
-  console.log("Total Calc Props", props.total.chosenItems);
+  //console.log("Total Calc Props", props.total.chosenItems);
   const listOfItems = props.total.chosenItems.map((item, index) => {
-    return <SelectedItem key={index} props={item}></SelectedItem>;
+    return (
+      <SelectedItem
+        className="order-items"
+        key={index}
+        props={item}
+      ></SelectedItem>
+    );
   });
+  console.log("Current props total", props.total.Total);
+  //let tax = props.total.Total * 0.18;
+  console.log("Calculated Tax", props.total.Total * 0.18);
+  //let taxedTotal = tax + props.total.Total;
   return (
-    <div>
+    <div className="pos-order">
       {listOfItems}
-      <div>Total: {props.total.total}</div>
+      {/* <div>Tax: {tax}</div>
+      <div>Total: {taxedTotal}</div> */}
+      <div>Total: {props.total.Total}</div>
     </div>
   );
 };
