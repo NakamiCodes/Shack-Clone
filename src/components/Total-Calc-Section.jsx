@@ -11,9 +11,9 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-  // return {
-  //   remove: (price, item) => dispatch(actions.removeTotal(price, item)),
-  // };
+  return {
+    remove: (price, item) => dispatch(actions.removeTotal(price, item)),
+  };
 };
 
 const TotalCalcSection = (props) => {

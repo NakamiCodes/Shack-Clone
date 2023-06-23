@@ -2,6 +2,11 @@ import * as types from "./action-types";
 import { configureStore } from "@reduxjs/toolkit";
 
 export const initialState = {
+  units: [
+    { id: "a", x: 0, y: 0 },
+    { id: "b", x: 1, y: 0 },
+    { id: "c", x: 4, y: 0 },
+  ],
   total: 0,
   user: "",
   userID: 0,
@@ -66,10 +71,19 @@ export const signOnReducer = (state = initialState, action) => {
   }
 };
 
+const gridReducer = (state = initialState, action) => {
+  switch (action.type) {
+    // Handle your actions here
+    default:
+      return state;
+  }
+};
+
 export const rootReducer = () => {
   return {
     totalReducer,
     signOnReducer,
+    gridReducer,
   };
 };
 
