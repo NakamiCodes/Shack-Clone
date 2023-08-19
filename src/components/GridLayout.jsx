@@ -5,13 +5,13 @@ import "../css/Grid.css";
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const GridLayout = () => {
-  const layouts = {
-    lg: [
-      { i: "a", x: 0, y: 0, w: 1, h: 2 },
-      { i: "b", x: 1, y: 0, w: 3, h: 2 },
-      { i: "c", x: 4, y: 0, w: 1, h: 2 },
-    ],
-  };
+  // const layouts = {
+  //   lg: [
+  //     { i: "a", x: 0, y: 0, w: 1, h: 2 },
+  //     { i: "b", x: 1, y: 0, w: 3, h: 2 },
+  //     { i: "c", x: 4, y: 0, w: 1, h: 2 },
+  //   ],
+  // };
 
   return (
     <div class="container">

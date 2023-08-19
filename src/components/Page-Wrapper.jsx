@@ -24,7 +24,7 @@ const PageWrapper = (props) => {
         total={props.state.total}
         chosenItems={props.state.chosenItems}
       ></TotalCalcSection> */}
-      <Simulation></Simulation>
+      <Simulation/>
     </div>
   );
 };
